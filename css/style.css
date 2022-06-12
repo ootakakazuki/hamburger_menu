@@ -4,6 +4,10 @@
 }
 
 .nav-list {
+
+    transition: opacity 1s;
+
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -15,11 +19,65 @@
     padding: 60px 0 30px;
     background:  rgba(125, 125, 125, 0.95);
     text-align: center;
-  }
+}
 
-  .nav-list > li a {
+.vis{
+    opacity: 1;
+}
+.nav-list > li a {
     display: block;
     padding: 10px 1em;
     text-decoration: none;
     color: white;
-  }
+}
+
+/*
+#ham{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 22px;
+  opacity: 1;
+}
+*/
+
+.fa-bars{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 22px;
+  opacity: 1;
+
+  visibility: visible;
+
+}
+
+.fa-xmark{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 22px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+#batsu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.vis2{
+  opacity: 1;
+  visibility: visible;
+}
+
+.vis3{
+  opacity: 0;
+  visibility: hidden;
+}
